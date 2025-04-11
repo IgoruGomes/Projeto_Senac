@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 50px;
+}
+
+.container-valores {
+    background-color: burlywood;
+    padding: 5%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.grid-valores {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.valores-conteudo {
+    margin: 10px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    /* border-radius: 5px; */
+    height: 35px;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    border: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+.mesano {
+    display: flex;
+}
+
+.botao {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    height: 35px;
+}

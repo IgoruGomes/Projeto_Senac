@@ -8,11 +8,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juros Compostos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <!-- Aqui é um cabeçalho-->>
+        <!-- Aqui é um cabeçalho-->
     </header>
+    <main>
+        <!-- Aqui fica o conteúdo principal -->
+        <section class="container-valores">
+            <div class="grid-valores">
+                <div class="valores-conteudo">
+                    <label>Valor inicial:</label>
+                    <input type="number" id="inicial">
+                </div>
+                <div class="valores-conteudo">
+                    <label>Valor mensal:</h2>
+                    <input type="number" id="mensal">
+                </div>
+                <div class="valores-conteudo">
+                    <label>Taxa de juros:</label>
+                    <input type="number" id="taxa">
+                </div>
+                <div class="valores-conteudo">
+                    <label>Período:</label>
+                    <div class="mesano">
+                        <input type="number" id="periodo">
+                        <select>
+                            <option value="1" id="mes">Mês</option>
+                            <option value="2" id="ano">Ano</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="botao">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+        </section>
+        <!-- Display dos cálculos-->
+        <section>
+            <table>
+                <tr>Mês</tr>
+                <tr>Montante</tr>
+                <tr>Valor ganho</tr>
+                <tr>Total</tr>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
