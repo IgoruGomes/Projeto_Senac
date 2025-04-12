@@ -35,9 +35,9 @@
                     <label>Período:</label>
                     <div class="mesano">
                         <input type="number" id="periodo">
-                        <select>
-                            <option value="1" id="mes">Mês</option>
-                            <option value="2" id="ano">Ano</option>
+                        <select id="valorperiodo">
+                            <option value="1">Mês</option>
+                            <option value="2">Ano</option>
                         </select>
                     </div>
                 </div>
@@ -47,12 +47,14 @@
             </div>
         </section>
         <!-- Display dos cálculos-->
-        <section>
-            <table>
-                <tr>Mês</tr>
-                <tr>Montante</tr>
-                <tr>Valor ganho</tr>
-                <tr>Total</tr>
+        <section class="tabela">
+            <table id="tabelavalores">
+                <thead>
+                    <td id="tabelasequencia">Sequência</td>
+                    <td id="tabelames">Mês</td>
+                    <td id="tabelaganho">Valor ganho</td>
+                    <td id="tabelatotal">Acumulado</td>
+                </thead>
             </table>
         </section>
     </main>

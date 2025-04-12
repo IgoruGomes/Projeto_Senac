@@ -56,3 +56,22 @@ select:focus {
     margin: 10px;
     height: 35px;
 }
+
+.tabela {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+table {
+    align-content: center;
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+tr, td {
+    border: 1px solid black;
+    width: auto;
+    text-align: center;
+}
